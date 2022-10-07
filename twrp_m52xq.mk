@@ -9,16 +9,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from m52xq device
 $(call inherit-product, device/samsung/m52xq/device.mk)
 
 PRODUCT_DEVICE := m52xq
-PRODUCT_NAME := omni_m52xq
+PRODUCT_NAME := twrp_m52xq
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-M526B
+PRODUCT_MODEL := SAMSUNG M526B
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
